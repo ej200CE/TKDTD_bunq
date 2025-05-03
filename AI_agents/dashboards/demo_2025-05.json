@@ -1,0 +1,141 @@
+{
+  "generated_at": "2025-05-03T06:36:42.007051",
+  "metrics": {
+    "total": -7629.62,
+    "top_descr": [
+      [
+        "Credit Card Payment",
+        16
+      ],
+      [
+        "Subscription Payment",
+        12
+      ],
+      [
+        "Salary Payment",
+        12
+      ],
+      [
+        "ATM Withdrawal",
+        12
+      ],
+      [
+        "Rent Payment",
+        9
+      ]
+    ]
+  },
+  "preference": "I WANT LESS CARBON FOOTPRINT",
+  "dashboard_plan": [
+    {
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "field": "description",
+          "type": "nominal"
+        },
+        "y": {
+          "aggregate": "sum",
+          "field": "value",
+          "type": "quantitative"
+        },
+        "color": {
+          "field": "description",
+          "type": "nominal"
+        }
+      },
+      "data": {
+        "values": [
+          {
+            "description": "Credit Card Payment",
+            "value": 16
+          },
+          {
+            "description": "Subscription Payment",
+            "value": 12
+          },
+          {
+            "description": "Salary Payment",
+            "value": 12
+          },
+          {
+            "description": "ATM Withdrawal",
+            "value": 12
+          },
+          {
+            "description": "Rent Payment",
+            "value": 9
+          }
+        ]
+      },
+      "title": "Top Transaction Types"
+    },
+    {
+      "mark": "text",
+      "encoding": {
+        "x": {
+          "value": 0,
+          "type": "quantitative"
+        },
+        "y": {
+          "value": 0,
+          "type": "quantitative"
+        },
+        "text": {
+          "value": "Total: -7629.62",
+          "type": "nominal"
+        }
+      },
+      "config": {
+        "text": {
+          "fontSize": 20,
+          "fontWeight": "bold"
+        }
+      },
+      "title": "Total Balance"
+    },
+    {
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "field": "description",
+          "type": "nominal"
+        },
+        "y": {
+          "field": "co2_impact",
+          "type": "quantitative",
+          "sort": "-y"
+        },
+        "color": {
+          "field": "description",
+          "type": "nominal"
+        }
+      },
+      "data": {
+        "values": [
+          {
+            "description": "Credit Card Payment",
+            "co2_impact": 8
+          },
+          {
+            "description": "Subscription Payment",
+            "co2_impact": 6
+          },
+          {
+            "description": "Salary Payment",
+            "co2_impact": 4
+          },
+          {
+            "description": "ATM Withdrawal",
+            "co2_impact": 10
+          },
+          {
+            "description": "Rent Payment",
+            "co2_impact": 5
+          }
+        ]
+      },
+      "title": "Estimated CO2 Impact per Transaction Type"
+    }
+  ]
+}
