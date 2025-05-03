@@ -1,0 +1,6 @@
+openai>=1.12.0
+pandas==2.2.1
+numpy<2.0          # keep numpy ABI compatible with pandas 2.2 wheels
+streamlit>=1.32.0
+altair>=5.2.0
+faker>=24.0
